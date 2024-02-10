@@ -1,0 +1,967 @@
+@charset "UTF-8";
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+
+}
+
+body {
+    /* font-family: 'Zen Kaku Gothic New', sans-serif; */
+    font-family: 'noto sans jp', sans-serif; 
+    font-size: 1.2rem;
+    color: #424141;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    text-align: center;    
+    /* box-sizing: border-box; */
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3  
+{
+    font-family: 'Kaisei Decol', serif;
+}
+
+h2 {
+    font-size: 2.4rem;
+    color: #424141;
+    margin: 0 auto 14px;
+    width: max-content;
+    position: relative;
+    /* border-bottom: 3px solid #F7E9E8; */
+}
+
+h2::after {
+    position: absolute;
+    bottom: -5px;
+    left: calc((100% - 300px)/2);
+    width: 300px;
+    height: 3px;
+    background: #F7E9E8;
+    box-shadow: 1px 1px #FCFF53;
+    content: "";
+}
+
+h3 {
+    font-size: 2.0rem;
+    width: max-content;
+    margin: 0 auto;
+    padding: 0 10px;
+    border-left: 2rem solid #FCFF53;
+}
+
+
+.wrapper {
+    width: 375px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 66px;
+    margin: 0 auto;
+    position: fixed;
+    top: 0; 
+    left: calc((100% - 100%) /2) ;
+    z-index: 1000;   
+    background: white;
+    box-shadow: 0 6px 3px -3px rgba(0, 0, 0, 0.1);
+}
+
+header .bg {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 66px;
+} 
+
+header .logo {
+    width: calc(375px * 0.8);
+    margin-left: 3px;
+    background-image: url(./images/kobitoflute.png);
+    background-size: 98%;
+    background-position: 55% 75%; 
+    cursor: pointer;
+}
+
+header .logo  a {
+    display: block;
+    width: calc(375px * 0.8);
+    height: 66px;
+
+}
+
+
+
+header #hmbmenu {
+    width: 36px;
+    height: 36px;
+    margin: auto;       
+}
+
+header #hmbmenu {
+    position: relative;
+    width: 36px;
+    cursor: pointer;
+}
+
+header #hmbmenu span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    display: block;
+    background: #000;
+
+}
+
+header #hmbmenu span:nth-child(1) {
+    top: 0;
+}
+
+header #hmbmenu span:nth-child(2) {
+    top: 14px;
+}
+
+header #hmbmenu span:nth-child(3) {
+    top: 28px;
+}
+
+
+
+/* --ハンバーガーメニュークリック--  */
+
+.open #hmbmenu span:nth-child(1) {
+    top: 15px;
+    transform: rotate(45deg);
+}
+
+.open #hmbmenu span:nth-child(2) {
+    width: 0;
+}
+
+.open #hmbmenu span:nth-child(3) {
+    top: 15px;
+    transform: rotate(-45deg);
+}
+
+/* --ハンバーガーメニュークリックここまで-- */
+
+header p {
+    font-size: 1rem;
+    line-height: 1;
+    position: absolute;
+    top: 5px;
+    left: 45px;
+    
+}
+
+/* --ヘッダーメニュー-- */
+
+header h1 {
+    position: absolute;
+    top: 15px;
+    left: 85px;
+    
+}
+
+.open header nav{
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 66px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+.open header nav {
+    display: block;
+    font-family: 'Kaisei Decol', serif;
+    font-size: 2.4rem;
+    line-height: 70px;
+}
+
+.open header nav li {
+    border-top: 1px solid #424141;
+}
+
+
+
+.open header nav li:last-child {
+    border-bottom: 1px solid #424141;
+}
+
+
+
+
+header nav {
+    display: none;
+}
+
+/* --ヘッダーメニューここまで-- */
+
+
+
+
+/* ------------main---------- */
+
+main {
+   margin-top: 66px !important;
+}
+
+section {
+    margin-bottom: 40px;
+
+}
+
+section:last-child {
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-left: 16px;
+    margin-right: 16px;
+    text-align: left;
+    line-height: 1.4em;
+}
+
+section::before {
+    height: 70px;
+    margin: -70px 0 0 ;
+    content: "";
+    display: block;
+}
+
+/* -----------#welcome---------- */
+
+#welcome {
+
+    /* background: #e6f8bd; */
+}
+
+
+
+#welcome .kv {
+    width: 100%;
+    height:238px;
+    position: relative;
+    background: url(./images/kv.jpg);
+    background-size: cover;
+
+}
+
+#welcome .kv::after {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(rgba(255, 255, 255, 0),rgba(0,0,0,0.1)); */
+    content: "";
+
+}
+
+#welcome p {
+    width: 100%;
+    margin: 0 auto;
+    line-height: 2em;
+    text-align: center;
+    color: #424141;
+    font-weight: bold;
+    
+}
+
+/* 
+aside{
+    width: 100%;
+    height: 10em;
+    margin: 10 auto;
+    background: #FCFF53;
+} */
+
+
+/* -------------------lesson---------- */
+
+
+#lesson {
+    /* background: #ddedf7; */
+}
+
+#lesson h2, {
+    margin-bottom: 20px;
+}
+
+#lesson h3  {
+    margin-bottom: 14px;
+}
+
+#lesson p {
+    margin-bottom: 14px;
+    
+}
+
+#lesson .lesson-menu h3 {
+    margin-top: 30px;
+}
+
+
+
+.menu-content .time::before{
+     content: "";
+    display: inline-block;
+    margin-right: 5px;
+    background-color: #FCFF53;
+    width: 12px;
+    height: 12px;
+}
+
+.menu-content p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.menu-content .time {
+    text-align: right;
+}
+
+
+.btn a {
+    color: #424141;
+    font-family: 'Kaisei Decol', serif;
+    display: block;
+    font-size: 2.4rem;
+    margin: 0 auto 14px;
+    width: 300px;
+    height: 44px;
+    line-height: 1.6;
+    border: 1px solid #F7E9E8;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #FCFF53;
+    margin-top: 20px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn a:hover {
+    color: rgb(241, 237, 237);
+    background: #f4b8b5;
+}
+
+
+/* -------------------koushi---------- */
+
+#koushi {
+    /* background: #fbdffd; */
+}
+
+
+
+/* -------------------access---------- */
+
+.map {
+    width: 50%;
+    height: auto;
+    margin: 20px auto;
+}
+
+
+/* -------------------footer---------- */
+
+footer {
+    background: lightgrey;
+    line-height: 2;
+    width: 100vw;
+
+}
+
+
+/* -----inquiry-----------*/
+
+
+
+input,
+button,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#submit .sbm-img {
+    width: 100%;
+    height:100px;
+    position: relative;
+    background: url(images/submit.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+
+}
+
+#submit .sbm-img::after {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(256, 256, 256, 0.1);
+    content: "";
+
+}
+
+#submit .sbm-img h1 {
+    /* font-family: 'Zen Kaku Gothic New', sans-serif; */
+    font-family: 'Kaisei Decol', serif;
+    font-size: 2.0rem;
+    font-weight: bolder;
+    position: absolute;
+    width: max-content;
+    color: white;
+    background: rgba(0, 0, 0, 0.1);
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#submit .note {
+    text-align: left;
+    margin: 10px 30px;
+}
+
+
+form table {
+    margin: 0 auto;
+}
+
+form th {
+    display: block;
+    width: 300px;
+    padding: 0 0 5px;
+    font-weight: normal;
+    text-align: left;
+}
+
+form td {
+    display: block;
+    width: 300px;
+    padding: 0 0 10px;
+}
+
+form td.date {
+    text-align: left;
+}
+
+form td.date span {
+    color: red;
+}
+
+label {
+    font-family: 'Kaisei Decol', serif;
+    font-size: 2.0rem;
+
+}
+
+label[for="your-name"]::after {
+    content:"*";
+    color: red;    
+    
+} 
+
+
+label[for="e-mail"]::after {
+    content:"*";
+    color: red;    
+    
+} 
+
+label[for="phone-num"]::after {
+    content:"*";
+    color: red;    
+    
+} 
+
+label[for="month1"]::after {
+    content:"*";
+    color: red;    
+    
+} 
+
+input {
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #424141;
+    border-radius: 5px;
+}
+
+select {
+    width: 40px;
+    height: 20px;
+    text-align: right;
+    margin: 5px;
+    padding-right: 5px;
+    border: 1px solid #424141;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #424141;
+    border-radius: 5px;
+}
+
+
+
+.note::before {
+    content: "*";
+    color: red;
+}
+
+
+#btn-submit {
+    color: #424141;
+    font-family: 'Kaisei Decol', serif;
+    display: block;
+    font-size: 2.4rem;
+    margin: 16px auto 16px;
+    padding: 0;
+    width: 300px;
+    height: 44px;
+    line-height: 1.6;
+    border: 1px solid #F7E9E8;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #FCFF53;
+
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#btn-submit:hover {
+    color: rgb(241, 237, 237);
+    background: #f4b8b5;
+}
+
+/* ----------------PC------------------------------ */
+
+@media screen and (min-width: 460px) {
+
+    section {
+        font-size: 1.6rem;
+    }
+
+
+    .wrapper {
+        width: 1040px;
+        margin: 0 auto;
+
+    }
+
+    h2::after {
+        position: absolute;
+        bottom: -5px;
+        left: calc((100% - 500px)/2);
+        width: 500px;
+        height: 3px;
+        background: #F7E9E8;
+        content: "";
+    }
+
+   
+
+
+
+
+    header {
+        width: 100%;
+        position: fixed;
+        top: 0; 
+        left: calc((100% - 1040px) / 2) ; 
+        /* display: flex;
+        justify-content: space-between; 
+        align-items: center;   */
+    
+
+    }
+
+    
+
+ 
+
+    header #hmbmenu {
+        display: none;
+    }
+
+    header nav {
+        display: block;
+    }
+    header nav ul {
+        display: flex;
+    }
+
+    header nav ul li {
+        width: 85px;       
+        font-family: 'Kaisei Decol', serif;
+        color: #424141;
+        font-size: 1.8rem;
+             text-align: center;        
+        margin: 10px 65px 0 0;       
+        
+    }
+
+    header nav ul li:last-child {
+        margin-right: 10px;
+    }
+
+    header nav ul li a:hover {
+        color: #ffb1bc;
+    }
+   
+
+
+    .text {
+        width: 698px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+/* -----------PC------main---------- */
+
+
+
+
+    main {
+        margin-top: 66px !important;
+     }
+     
+     section {
+         margin-bottom: 100px;
+     }
+     
+     section:last-child {
+         margin-bottom: 50px;
+     }
+
+     section::before {
+         height: 70px;
+         margin: -70px 0 0 ;
+         content: "";
+         display: block;
+     }
+
+    
+
+    #welcome .kv{
+        width: 100%;
+        height:400px;
+        position: relative;
+        background-size: cover;
+        background-position: center;    
+        
+    }
+
+    #welcome p {
+        font-size: 1.6rem;
+    }
+
+    
+/* -----------#introduction---------- */
+
+#introduction .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#introduction .photo {
+    width: 500px;
+    margin: 0 10px;
+}
+
+    #introduction .photo img {
+        width: 100%;
+        height: 248px;
+        object-fit: cover;
+        object-position: 50% 0%;
+    }
+
+#introduction .text {
+        width: 500px;
+        margin: auto 10px;
+        text-align: left;
+        line-height: 1.2em;
+    }
+
+    #introduction .container-magicflute {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 20px; 
+    }
+
+
+
+    /* #introduction .text {
+        width: 698px;
+        height: auto;
+        margin: 20px auto;
+    } */
+
+    /* #lesson h2, {
+        margin-bottom: 20px;
+    }
+    
+    #lesson h3,p {
+        margin-bottom: 14px;
+    }
+    
+    #lesson h3 {
+        margin-bottom: 14px;
+        
+    }
+    
+    #lesson .lesson-menu h3 {
+        margin-top: 30px;
+    } */
+
+    #lesson .lessoncourse p {
+        width: 698px;
+        margin: 0 auto;
+    }
+
+    #lesson .lesson-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #lesson .menu-content img {
+        width: 300px;
+        height: 142px;
+    }
+
+    #lesson .menu-content .text {
+        width: 300px;
+        height: auto;
+        padding: 10px;
+        text-align: left;
+    }
+    
+
+    #koushi .photo img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: 0% 50%;
+ 
+    }
+
+    #access .container {
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    #access .map {
+        width: 40%;
+        margin: 20px 0;
+     
+    }
+
+    #access .map img {
+        width: 380px;
+        margin: 0 auto;
+        object-fit: cover;
+        object-position: 0% 50%;
+    }
+
+    #access .text {
+       width: max-content;
+        margin: auto 0;
+        text-align: left;
+        line-height: 1.2em;
+    }
+
+
+
+/* -----PC------------inquiry------------ */
+
+a {
+    color: #424141;
+}
+
+#submit .sbm-img {
+    width: 100%;
+    height:238px;
+    position: relative;
+    background: url(images/submit.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+
+}
+
+#submit .sbm-img::after {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(256, 256, 256, 0.1);
+    content: "";
+
+}
+
+#submit .sbm-img h1 {
+    font-size: 4.0rem;
+    position: absolute;
+    color: white;
+    background: rgba(0, 0, 0, 0.1);
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#submit .note {
+    text-align: left;
+    margin: 10px 160px;
+}
+
+
+    #inquiry .submit {
+        width: 750px;
+        margin: 20px auto;
+        text-align: left;
+    }
+
+    form table {
+        margin: 0 auto;
+        width: 750px;;
+
+    }
+
+
+
+    form th {
+        display: inline-block;
+        padding: 0;
+        margin: 10px;
+        width: 220px;   
+        vertical-align: top; 
+
+    }
+
+    form td {
+        display: inline-block;
+        margin: 10px;
+        padding: 0;
+        width: 480px;  
+   
+    }
+
+    form td.date{
+        font-size: 1.4rem;
+    }
+
+    label {
+        width: 200px;
+    }
+
+
+
+    input#your-name,
+    input#phone-num,
+    input#e-mail {
+        font-size: 1.8rem;
+        height: 40px;
+        width: 480px;
+        border: 1px solid #424141;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+
+
+    select {
+        font-size: 1.8rem;
+        height: 40px;
+        width: 50px;
+        padding-right: 10px;
+        border: 1px solid #424141;
+        border-radius: 5px;
+        box-sizing: border-box
+    }
+    
+
+    select#month1,
+    select#month2,
+    select#month3,
+    select#day1,
+    select#day2,
+    select#day3,
+    select#lessontime1,
+    select#lessontime2,
+    select#lessontime3, {
+        margin: 0 0 0 2em;
+
+    }
+
+
+    textarea {
+    font-size: 1.4rem;
+    width: 480px;
+    height: 300px;
+    border: 1px solid #424141;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+   
+
+
+
+
+
+
