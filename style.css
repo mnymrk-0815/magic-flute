@@ -4,25 +4,21 @@ html {
     margin: 0;
     padding: 0;
     font-size: 62.5%;
-
 }
 
 body {
-    /* font-family: 'Zen Kaku Gothic New', sans-serif; */
     font-family: 'noto sans jp', sans-serif; 
     font-size: 1.2rem;
     color: #424141;
     margin: 0;
     padding: 0;
     line-height: 1.2;
-    text-align: center;    
-    /* box-sizing: border-box; */
-
-
+    text-align: center;   
 }
 
 a {
     text-decoration: none;
+    color: #424141;
 }
 
 ul li {
@@ -36,8 +32,7 @@ img {
 
 h1,
 h2,
-h3  
-{
+h3 {
     font-family: 'Kaisei Decol', serif;
 }
 
@@ -46,8 +41,7 @@ h2 {
     color: #424141;
     margin: 0 auto 14px;
     width: max-content;
-    position: relative;
-    /* border-bottom: 3px solid #F7E9E8; */
+    position: relative;   
 }
 
 h2::after {
@@ -107,9 +101,7 @@ header .logo  a {
     display: block;
     width: calc(375px * 0.8);
     height: 66px;
-
 }
-
 
 
 header #hmbmenu {
@@ -131,7 +123,6 @@ header #hmbmenu span {
     height: 2px;
     display: block;
     background: #000;
-
 }
 
 header #hmbmenu span:nth-child(1) {
@@ -171,8 +162,7 @@ header p {
     line-height: 1;
     position: absolute;
     top: 5px;
-    left: 45px;
-    
+    left: 45px;  
 }
 
 /* --ヘッダーメニュー-- */
@@ -180,8 +170,7 @@ header p {
 header h1 {
     position: absolute;
     top: 15px;
-    left: 85px;
-    
+    left: 85px; 
 }
 
 .open header nav{
@@ -232,7 +221,6 @@ main {
 
 section {
     margin-bottom: 40px;
-
 }
 
 section:last-child {
@@ -255,13 +243,6 @@ section::before {
 
 /* -----------#welcome---------- */
 
-#welcome {
-
-    /* background: #e6f8bd; */
-}
-
-
-
 #welcome .kv {
     width: 100%;
     height:238px;
@@ -277,7 +258,6 @@ section::before {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: linear-gradient(rgba(255, 255, 255, 0),rgba(0,0,0,0.1)); */
     content: "";
 
 }
@@ -288,27 +268,16 @@ section::before {
     line-height: 2em;
     text-align: center;
     color: #424141;
-    font-weight: bold;
-    
+    font-weight: bold;    
 }
 
-/* 
-aside{
-    width: 100%;
-    height: 10em;
-    margin: 10 auto;
-    background: #FCFF53;
-} */
+
 
 
 /* -------------------lesson---------- */
 
 
-#lesson {
-    /* background: #ddedf7; */
-}
-
-#lesson h2, {
+#lesson h2 {
     margin-bottom: 20px;
 }
 
@@ -317,8 +286,7 @@ aside{
 }
 
 #lesson p {
-    margin-bottom: 14px;
-    
+    margin-bottom: 14px;    
 }
 
 #lesson .lesson-menu h3 {
@@ -368,13 +336,6 @@ aside{
 }
 
 
-/* -------------------koushi---------- */
-
-#koushi {
-    /* background: #fbdffd; */
-}
-
-
 
 /* -------------------access---------- */
 
@@ -391,12 +352,10 @@ footer {
     background: lightgrey;
     line-height: 2;
     width: 100vw;
-
 }
 
 
 /* -----inquiry-----------*/
-
 
 
 input,
@@ -421,7 +380,6 @@ select {
     background: url(images/submit.jpg);
     background-size: cover;
     background-position: 50% 50%;
-
 }
 
 #submit .sbm-img::after {
@@ -432,7 +390,6 @@ select {
     height: 100%;
     background: rgba(256, 256, 256, 0.1);
     content: "";
-
 }
 
 #submit .sbm-img h1 {
@@ -484,32 +441,27 @@ form td.date span {
 label {
     font-family: 'Kaisei Decol', serif;
     font-size: 2.0rem;
-
 }
 
 label[for="your-name"]::after {
     content:"*";
-    color: red;    
-    
+    color: red;       
 } 
 
 
 label[for="e-mail"]::after {
     content:"*";
-    color: red;    
-    
+    color: red;       
 } 
 
 label[for="phone-num"]::after {
     content:"*";
-    color: red;    
-    
+    color: red;       
 } 
 
 label[for="month1"]::after {
     content:"*";
-    color: red;    
-    
+    color: red;        
 } 
 
 input {
@@ -559,7 +511,6 @@ textarea {
     border: 1px solid #F7E9E8;
     border-radius: 5px;
     box-shadow: 1px 1px 1px #FCFF53;
-
     transition: background-color 0.2s, color 0.2s;
 }
 
@@ -580,7 +531,6 @@ textarea {
     .wrapper {
         width: 1040px;
         margin: 0 auto;
-
     }
 
     h2::after {
@@ -602,12 +552,7 @@ textarea {
         width: 100%;
         position: fixed;
         top: 0; 
-        left: calc((100% - 1040px) / 2) ; 
-        /* display: flex;
-        justify-content: space-between; 
-        align-items: center;   */
-    
-
+        left: calc((100% - 1040px) / 2) ;    
     }
 
     
@@ -631,8 +576,7 @@ textarea {
         color: #424141;
         font-size: 1.8rem;
              text-align: center;        
-        margin: 10px 65px 0 0;       
-        
+        margin: 10px 65px 0 0;               
     }
 
     header nav ul li:last-child {
@@ -652,8 +596,6 @@ textarea {
     }
 
 /* -----------PC------main---------- */
-
-
 
 
     main {
@@ -724,26 +666,9 @@ textarea {
         justify-content: space-between;
         margin-top: 20px; 
     }
-
-
-
-    /* #introduction .text {
-        width: 698px;
-        height: auto;
-        margin: 20px auto;
-    } */
-
-    /* #lesson h2, {
-        margin-bottom: 20px;
-    }
-    
-    #lesson h3,p {
-        margin-bottom: 14px;
-    }
     
     #lesson h3 {
-        margin-bottom: 14px;
-        
+        margin-bottom: 14px;       
     }
     
     #lesson .lesson-menu h3 {
@@ -779,19 +704,16 @@ textarea {
         border-radius: 50%;
         object-fit: cover;
         object-position: 0% 50%;
- 
     }
 
     #access .container {
         display: flex;
-        justify-content: center;
-    
+        justify-content: center;   
     }
     
     #access .map {
         width: 40%;
-        margin: 20px 0;
-     
+        margin: 20px 0;    
     }
 
     #access .map img {
@@ -823,7 +745,6 @@ a {
     background: url(images/submit.jpg);
     background-size: cover;
     background-position: 50% 50%;
-
 }
 
 #submit .sbm-img::after {
@@ -834,7 +755,6 @@ a {
     height: 100%;
     background: rgba(256, 256, 256, 0.1);
     content: "";
-
 }
 
 #submit .sbm-img h1 {
@@ -862,7 +782,6 @@ a {
     form table {
         margin: 0 auto;
         width: 750px;;
-
     }
 
 
@@ -873,15 +792,13 @@ a {
         margin: 10px;
         width: 220px;   
         vertical-align: top; 
-
     }
 
     form td {
         display: inline-block;
         margin: 10px;
         padding: 0;
-        width: 480px;  
-   
+        width: 480px;    
     }
 
     form td.date{
@@ -926,9 +843,8 @@ a {
     select#day3,
     select#lessontime1,
     select#lessontime2,
-    select#lessontime3, {
+    select#lessontime3 {
         margin: 0 0 0 2em;
-
     }
 
 
